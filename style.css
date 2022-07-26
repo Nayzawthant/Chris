@@ -1,0 +1,1279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tns-controls {
+    display: none;
+}
+
+button  {
+    padding: 10px 15px;
+    background: #ccc;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #DBDBDB;
+}
+
+.tns-nav {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 100px;
+}
+
+.menuLogo h4 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 125.02%;
+    letter-spacing: -0.04em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.nav {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    position: relative;
+    height: 110vh;
+}
+
+.nav .img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.nav .img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.navInner {
+    margin-left: 120px;
+}
+
+.navInner span {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 126.02%;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: rgba(236, 236, 236, 0.17);
+    padding: 3px;
+}
+
+.navInner h4 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 108px;
+    line-height: 111.02%;
+    letter-spacing: -0.04em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.navInner p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 198.02%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 70px;
+}
+
+.navInner a {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 234.52%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 20px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+
+.cityHeader {
+    position: relative;
+    width: 84%;
+    margin: 0 auto;
+
+}
+
+.cityHeader h1 {
+    font-family: 'Jost';
+    font-size: 120px;
+    font-style:normal;
+    line-height: 150.02%;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: #F8F8F8;
+}
+
+.cityHeader span {
+    font-family: 'Inconsolata';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 126.02%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #111111;
+    position: absolute;
+    top: 73px;
+    left: 150px;
+    padding: 3px 5px;
+    background: #FFFFFF;
+    border: 2px solid #F8F8F8;
+}
+
+.mainCity {
+    display: flex;
+    justify-content: space-between;
+    width: 84%;
+    margin: 0 auto;
+}
+
+.mainCity .city1 {
+    width: 50%;
+}
+
+.mainCity .city2 {
+    width: 40%;
+}
+
+.mainCity .city1 p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 237.52%;
+    letter-spacing: 0.02em;
+    color: #555555;
+    margin-bottom: 50px;
+}
+
+.mainCity .city1 .button button {
+    background: #181818;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.mainCity .city1 .button button a {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 234.52%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.mainCity .city2 p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #2F2F2F;
+    margin-bottom: 15px;
+}
+
+.mainCity .city2 .mainBorder1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.mainCity .city2 .mainBorder1 .border {
+    width: 85%;
+    height: 2px;
+    background:  #3A3422 ;
+}
+
+.mainCity .city2 .mainBorder1 hr {
+    width: 15%;
+    height: 2px;
+    background:  #DBDBDB;
+    border: 0;
+    outline: 0;
+}
+
+.mainCity .city2 .mainBorder2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.mainCity .city2 .mainBorder2 .border {
+    width: 95%;
+    height: 2px;
+    background:  #3A3422 ;
+}
+
+.mainCity .city2 .mainBorder2 hr {
+    width: 5%;
+    height: 2px;
+    background:  #DBDBDB;
+    border: 0;
+    outline: 0;
+}
+
+.mainCity .city2 .mainBorder3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.mainCity .city2 .mainBorder3 .border {
+    width: 92%;
+    height: 2px;
+    background:  #3A3422 ;
+}
+
+.mainCity .city2 .mainBorder3 hr {
+    width: 8%;
+    height: 2px;
+    background:  #DBDBDB;
+    border: 0;
+    outline: 0;
+}
+
+.mainCity .city2 .mainBorder4 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.mainCity .city2 .mainBorder4 .border {
+    width: 80%;
+    height: 2px;
+    background:  #3A3422 ;
+}
+
+.mainCity .city2 .mainBorder4 hr {
+    width: 20%;
+    height: 2px;
+    background:  #DBDBDB;
+    border: 0;
+    outline: 0;
+}
+
+.mainCity .city2 .mainBorder5 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.mainCity .city2 .mainBorder5 .border {
+    width: 95%;
+    height: 2px;
+    background:  #3A3422 ;
+}
+
+.mainCity .city2 .mainBorder5 hr {
+    width: 5%;
+    height: 2px;
+    background:  #DBDBDB;
+    border: 0;
+    outline: 0;
+}
+
+.productHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.productHeader .innerHeader {
+    position: relative;
+}
+
+.productHeader .innerHeader h1 {
+    font-family: 'Jost';
+    font-size: 120px;
+    font-style:normal;
+    line-height: 150.02%;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: #F8F8F8;
+}
+
+.productHeader .innerHeader span {
+    font-family: 'Inconsolata';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 126.02%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #111111;
+    position: absolute;
+    top: 73px;
+    left: 250px;
+    padding: 3px 5px;
+    background: #FFFFFF;
+    border: 2px solid #F8F8F8;
+}
+
+.mainProduct {
+    display: flex;
+    justify-content: space-between;
+    width: 84%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.mainProduct .product1 .innerProduct1 {
+    margin-bottom: 40px;
+}
+
+.mainProduct .product1 .innerProduct1 img {
+    width: 100%;
+}
+
+.mainProduct .product1 .border {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.mainProduct .product2 .innerProduct1 {
+    margin-bottom: 40px;
+}
+
+.mainProduct .product2 .border {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.mainProduct .product1 .border .innerBorder1 {
+    width: 100%;
+    height: 3px;
+    background: #2F2F2F;
+    margin-top: 10px;
+}
+
+.mainProduct .product1 .border .innerBorder2 {
+    width: 100%;
+    height: 3px;
+    background: #2F2F2F;
+    margin-top: 10px;
+}
+
+.mainProduct .product1 .border .innerBorder3 {
+    width: 100%;
+    height: 3px;
+    background: #2F2F2F;
+    margin-top: 10px;
+}
+
+.mainProduct .product2 .border .innerBorder4 {
+    width: 100%;
+    height: 3px;
+    background: #2F2F2F;
+    margin-top: 10px;
+}
+
+.mainProduct .product2 .border .innerBorder5 {
+    width: 100%;
+    height: 3px;
+    background: #2F2F2F;
+    margin-top: 10px;
+}
+
+.mainProduct .product2 .border .innerBorder6 {
+    width: 100%;
+    height: 3px;
+    background: #2F2F2F;
+    margin-top: 10px;
+}
+
+.mainProduct .product1 .border a {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 27px;
+    text-align: right;
+    text-transform: lowercase;
+    color: #2F2F2F;
+    text-decoration: none;
+}
+
+.mainProduct .product2 .border a {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 27px;
+    text-align: right;
+    text-transform: lowercase;
+    color: #2F2F2F;
+    text-decoration: none;
+}
+
+.mainSing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #0D0D0D;
+    height: 80vh;
+    margin: 80px 0;
+}
+
+.mainSing .topIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mainSing .bottomIcon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.mainSing .innerSing {
+    text-align: center;
+}
+
+.mainSing .innerSing h1 {
+    font-family: 'Jost';
+    font-size: 90px;
+    line-height: 150.02%;
+    text-align: center;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #EAEAEA;
+}
+
+.mainSing .innerSing .border {
+    display: flex;
+    justify-content: center;
+}
+
+.mainSing .innerSing hr {
+    width: 20%;
+    height: 3px;
+    background: #EAEAEA;
+    margin-bottom: 30px;
+}
+
+.mainSing .innerSing span {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 174%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.mainSing .innerSing p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 180%;
+    color: #999999;
+    margin-top: 40px;
+}
+
+.mainDesign {
+    width: 84%;
+    margin: 0 auto;
+}
+
+.mainDesign .design1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.mainDesign .design1 .innerDesign {
+    width: 31%;
+}
+
+.mainDesign .design1 .innerDesign h4 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.mainDesign .design1 .innerDesign p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 188.02%;
+    letter-spacing: 0.02em;
+    color: #282828;
+    margin-bottom: 30px;
+}
+
+.mainDesign .design1 .innerDesign hr {
+    width: 91%;
+    height: 3px;
+    background: #E2E2E2;
+    border: 0;
+}
+
+.mainDesign .design2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainDesign .design2 .innerDesign {
+    width: 31%;
+}
+
+.mainDesign .design2 .innerDesign h4 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.mainDesign .design2 .innerDesign p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 188.02%;
+    letter-spacing: 0.02em;
+    color: #282828;
+    margin-bottom: 30px;
+}
+
+.mainDesign .design2 .innerDesign hr {
+    width: 91%;
+    height: 4px;
+    background: #E2E2E2;
+    border: 0;
+}
+
+.mainProduct .product3 {
+    position: absolute;
+    bottom: 170px;
+    right: 350px;
+    background: #181818;
+    padding: 10px 20px;
+}
+
+.mainProduct .product3 a {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.mainProduct .product3 img {
+    margin-left: 10px;
+}
+
+.mainGraphic {
+    width: 84%;
+    margin: 0 auto;
+}
+
+.mainGraphic .secondGraphic {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainGraphic .secondGraphic .graphic {
+    position: relative;
+    background: #000000;
+    opacity: 0.9;
+}
+
+.mainGraphic .secondGraphic .graphic img {
+    width: 100%;
+    height: 100%;
+}
+
+.mainGraphic .secondGraphic .graphic .inner {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 1;
+}
+
+.mainGraphic .secondGraphic .graphic .inner span {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #FCFCFC;
+}
+
+.mainGraphic .secondGraphic .graphic .inner p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+.graphicHeader {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.graphicHeader .innerHeader {
+    position: relative;
+}
+
+.graphicHeader .innerHeader h1 {
+    font-family: 'Jost';
+    font-size: 120px;
+    font-style:normal;
+    line-height: 150.02%;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: #F8F8F8;
+}
+
+.graphicHeader .innerHeader span {
+    font-family: 'Inconsolata';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 126.02%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #111111;
+    position: absolute;
+    top: 73px;
+    left: 100px;
+    padding: 3px 5px;
+    background: #FFFFFF;
+    border: 2px solid #F8F8F8;
+}
+
+.mainGraphic .secondGraphic .img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mainGraphic .secondGraphic .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.mainGraphic .footer {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.mainGraphic .footer a {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 234.52%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #111111;
+    text-decoration: none;
+}
+
+.mainGraphic .footer img {
+    margin-left: 10px;
+}
+
+.wrapper .owl-dots  .owl-dot  {
+    background: #FFFFFF;
+    border-radius: 40%;
+    margin-right: 10px;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #000000;
+    padding: 80px 0;
+    height: 100%;
+}
+
+.wrapper .innerWrapper {
+    text-align: center;
+}
+
+.wrapper .innerWrapper .wrapperHeader {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.wrapper .innerWrapper .wrapperHeader h1 {
+    font-family: 'Jost';
+    font-size: 120px;
+    line-height: 150.02%;
+    text-align: center;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.wrapper .innerWrapper .wrapperHeader span {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 126.02%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: absolute;
+    top: 80px;
+    left: 620px;
+    background: #000000;
+    border: 2px solid #333333;
+}
+
+.wrapper .innerWrapper p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 183.02%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+.wrapper .innerWrapper .last {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper .innerWrapper .last .innerLast {
+    text-align: center;
+}
+
+.wrapper .innerWrapper .last .innerLast h4 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 225.02%;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.wrapper .innerWrapper .last .innerLast p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 178.52%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #F7F7F7;
+}
+
+.wrapper .image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.navLink {
+    width: 84%;
+    margin: 0 auto;
+}
+
+.navLink h4 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 125.02%;
+    letter-spacing: -0.04em;
+    text-transform: capitalize;
+    color: #1A1A1A;
+    margin-bottom: 30px;
+}
+
+.navLink .innerLink {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLink .innerLink .link1 p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 225.02%;
+    letter-spacing: 0.02em;
+    color: #494949;
+    margin-bottom: 40px;
+}
+
+.navLink .innerLink .link1 input {
+    background: #F4F4F4;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #494949;
+    padding: 10px 15px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 30px;
+}
+
+.navLink .innerLink .link1 a {
+    background: #181818;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 10px 68px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navLink .innerLink .link2 {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLink .innerLink .link2 .innerLink2 h4 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 330.5%;
+    letter-spacing: 0.085em;
+    text-transform: uppercase;
+    color: #3F3F3F;
+    margin-bottom: 0px;
+}
+
+.navLink .innerLink .link2 .innerLink2 p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 330.5%;
+    letter-spacing: 0.085em;
+    text-transform: uppercase;
+    color: #8F8F8F;
+}
+
+.navLink .innerLink .link3 p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 225.02%;
+    letter-spacing: 0.02em;
+    color: #494949;
+    margin-bottom: 30px;
+}
+
+
+.navLink .innerLink .link3 a {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 183.02%;
+    letter-spacing: 0.01em;
+    color: #2F2F2F;
+    text-decoration: none;
+    border-bottom: 3px solid #2F2F2F;
+}
+
+@media(max-width:780px) {
+    .menu {
+        width: 100%;
+        right: 0;
+    }
+
+    .nav {
+        height: 100%;
+    }
+
+    .navInner {
+        margin-top: 100px;
+        margin-left: 0px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+
+    .navInner h4 br {
+        display: none;
+    }
+
+    .navInner h4 {
+        font-size: 60px;
+    }
+
+    .navInner p br {
+        display: none;
+    }
+
+    .navInner p {
+        font-size: 20px;
+    }
+
+    .navInner a {
+        font-size: 15px;
+    }
+
+    .cityHeader {
+        text-align: center;
+    }
+
+    .cityHeader h1 {
+        font-size: 70px;
+    }
+
+    .cityHeader span {
+        position: relative;
+        top: 0px;
+        left: 0;
+    }
+
+    .mainCity {
+        display: block;
+        width: 100%;
+    }
+
+    .mainCity .city1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .mainCity .city1 p br {
+        display: none;
+    }
+
+    .mainCity .city1 .button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mainCity .city2 {
+        width: 50%;
+        margin: 0 auto;
+        text-align: ;
+        
+    }
+
+    .productHeader {
+        margin-bottom: 50px;
+    }
+
+    .productHeader .innerHeader {
+        text-align: center;
+    }
+
+    .productHeader .innerHeader h1 {
+        font-size: 60px;
+    }
+
+    .productHeader .innerHeader span {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .mainProduct {
+        display: block;
+        width: 100%;
+    }
+
+    .mainProduct .product1 {
+        width: 100%;
+    }
+
+    .mainProduct .product2 {
+        width: 100%;
+    }
+
+    .mainProduct .product2 .innerProduct1 {
+        width: 100%;
+    }
+
+    .mainProduct .product2 .innerProduct1 img {
+        width: 100%;
+    }
+
+    .mainProduct .product1 .border {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mainProduct .product2 .border {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mainProduct .product3 {
+        position: relative;
+        bottom: 0px;
+        right: 0px;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .mainSing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background: #0D0D0D;
+        height: 100%;
+        margin: 80px 0;
+    }
+
+    .mainSing .topIcon img {
+        width: 100px;
+    }
+    
+    .mainSing .bottomIcon img {
+        width: 100px;
+    }
+
+    .mainSing .innerSing {
+        margin-top: 80px ;
+        margin-bottom: 20px;
+    }
+
+    .mainSing .innerSing h1 {
+        font-size: 50px;
+    }
+
+    .mainSing .innerSing span {
+        font-size: 20px;
+    }
+
+    .mainSing .innerSing p {
+        font-size: 20px;
+    }
+
+    .mainDesign {
+        width: 100%;
+    }
+
+    .mainDesign .design1 {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .mainDesign .design1 .innerDesign {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .mainDesign .design1 .innerDesign hr {
+        width: 100%;
+    }
+
+    .mainDesign .design2 {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .mainDesign .design2 .innerDesign {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .mainDesign .design2 .innerDesign hr {
+        width: 100%;
+    }
+
+    .mainGraphic {
+        width: 100%;
+    }
+
+    .mainGraphic .secondGraphic {
+        display: block;
+    }
+
+    .mainGraphic .secondGraphic .graphic {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .mainGraphic .secondGraphic .graphic .inner {
+        text-align: center;
+    }
+
+    .mainGraphic .secondGraphic .graphic .inner p br {
+        display: none;
+        left: 0px;
+    }
+
+    .mainGraphic .secondGraphic .img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .wrapper .innerWrapper .wrapperHeader {
+        text-align: center;
+    }
+
+    .wrapper .innerWrapper .wrapperHeader h1 {
+        font-size: 70px;
+    }
+
+    .wrapper .innerWrapper .wrapperHeader span {
+        font-size: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .wrapper .innerWrapper p {
+        font-size: 20px;
+    }
+
+    .wrapper .innerWrapper p br {
+        display: none;
+    }
+
+    .mainGraphic .secondGraphic .graphic .inner p {
+        font-size: 20px;
+    }
+
+    .mainGraphic .secondGraphic .graphic .inner p br {
+        display: none;
+    }
+
+    .navLink{
+        width: 100%;
+    }
+
+    .navLink h4 {
+        text-align: center;
+    }
+
+    .navLink .innerLink {
+        display: block;
+    }
+    
+
+    .navLink .innerLink .link1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navLink .innerLink .link2 {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .navLink .innerLink .link2 .innerLink2 {
+        text-align: center;
+    }
+
+    .navLink .innerLink .link3 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+
+
+
+
+}
