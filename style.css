@@ -601,15 +601,14 @@ button  {
     border: 0;
 }
 
-.mainProduct .product3 {
-    position: absolute;
-    bottom: 170px;
-    right: 350px;
+.mainProduct .product3 button {
+    margin-top: 60px;
     background: #181818;
     padding: 10px 20px;
+    border: none;
 }
 
-.mainProduct .product3 a {
+.mainProduct .product3 button a {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
@@ -618,6 +617,7 @@ button  {
     text-transform: uppercase;
     color: #FFFFFF;
     text-decoration: none;
+    outline: none;
 }
 
 .mainProduct .product3 img {
@@ -1101,12 +1101,10 @@ button  {
     }
 
     .mainProduct .product3 {
-        position: relative;
-        bottom: 0px;
-        right: 0px;
-        width: 70%;
-        margin: 0 auto;
+        width: 100%;
         margin-top: 40px;
+        display: flex;
+        justify-content: center;
     }
 
     .mainSing {
