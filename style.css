@@ -23,11 +23,11 @@ button  {
 .menu {
     display: flex;
     justify-content: space-between;
-    width: 85%;
+    width: 95%;
     align-items: center;
     position: absolute;
     top: 0;
-    right: 100px;
+    right: 50px;
 }
 
 .menuLogo h4 {
@@ -368,6 +368,7 @@ button  {
 
 .mainProduct .product1 .innerProduct1 {
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .mainProduct .product1 .innerProduct1 img {
@@ -607,6 +608,11 @@ button  {
     height: 4px;
     background: #E2E2E2;
     border: 0;
+}
+
+.mainProduct .product3 {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .mainProduct .product3 button {
@@ -897,6 +903,7 @@ button  {
 }
 
 .navLink .innerLink .link1 input {
+    width: 90%;
     background: #F4F4F4;
     font-family: 'Manrope';
     font-style: normal;
@@ -906,7 +913,7 @@ button  {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #494949;
-    padding: 10px 15px;
+    padding: 12px 15px;
     border: 0;
     outline: 0;
     margin-bottom: 30px;
@@ -979,6 +986,34 @@ button  {
     color: #2F2F2F;
     text-decoration: none;
     border-bottom: 3px solid #2F2F2F;
+}
+
+.mainBottom {
+    background: #1A1A1A;
+    padding: 40px 0;
+    margin-top: 80px;
+}
+
+.mainBottom .secondBottom {
+    display: flex;
+    justify-content: space-between;
+    width: 84%;
+    margin: 0 auto;
+}
+
+.mainBottom .bottom1 img {
+    margin-right: 10px;
+}
+    
+
+.mainBottom p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 212.4%;
+    letter-spacing: 0.02em;
+    color: #8C8C8C;
 }
 
 @media(max-width:780px) {
@@ -1271,6 +1306,11 @@ button  {
         text-align: center;
         margin-bottom: 50px;
         margin-top: 20px;
+    }
+
+    .mainBottom .secondBottom {
+        display: block;
+        text-align: center;
     }
 
 
