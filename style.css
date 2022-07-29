@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
+
 .tns-controls {
     display: none;
 }
 
-button  {
+button {
     padding: 10px 15px;
     background: #ccc;
     border-radius: 5px;
@@ -20,14 +25,71 @@ button  {
     display: none;
 }
 
+.secondMenu {
+    height: 530px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 2px 1px 2px 3px #ccc;
+    position: absolute;
+    top: 105px;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: -300px;
+    transition: all 0.3s;
+    z-index: 200;
+    background: #FFFFFF; 
+}
+
+.secondMenu  a {
+    width: 100%;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-size: 23px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: #ccc 0px 30px 60px -12px inset, #fff 0px 18px 36px -18px inset;
+    background: #FFFFFF;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.secondMenu  a:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.menu-btn {
+    display: block;
+    position: absolute;
+    right: 100px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+
+
+.mobile-menu{
+    margin-right: 0px;
+    z-index: 100;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
-    width: 95%;
+    width: 100%;
     align-items: center;
-    position: absolute;
+    padding: 30px 0;
+    background: #3F3F3F;
+    position: relative;
+    position: sticky;
     top: 0;
-    right: 50px;
+    z-index: 99;
+    
 }
 
 .menuLogo h4 {
@@ -48,7 +110,7 @@ button  {
     align-items: center;
     margin-bottom: 50px;
     position: relative;
-    height: 110vh;
+    height: 120vh;
 }
 
 .nav .img {
@@ -121,6 +183,13 @@ button  {
     background: transparent;
     border: 1px solid #fff;
     text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.navInner a:hover {
+    background: #FFFFFF;
+    border: 1px solid #000;
+    color: #3F3F3F;
 }
 
 .cityHeader {
@@ -187,6 +256,16 @@ button  {
     display: flex;
     align-items: center;
     padding: 10px 20px;
+    transition: all 0.5s ease;
+}
+
+.mainCity .city1 .button button:hover {
+    background: #FFFFFF;
+    border: 2px solid #000;
+}
+
+.mainCity .city1 .button button a:hover  {
+    color: #3F3F3F;
 }
 
 .mainCity .city1 .button button a {
@@ -367,12 +446,21 @@ button  {
 }
 
 .mainProduct .product1 .innerProduct1 {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     width: 100%;
+    height: 600px;
 }
 
 .mainProduct .product1 .innerProduct1 img {
     width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.mainProduct .product2 .innerProduct1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
 }
 
 .mainProduct .product1 .border {
@@ -381,10 +469,14 @@ button  {
     justify-content: flex-end;
 }
 
-
+.mainProduct .product2 .innerProduct1:first-child {
+    height: 300px;
+}
 
 .mainProduct .product2 .innerProduct1 {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+    width: 100%;
+    height: 600px;
 }
 
 .mainProduct .product2 .border {
@@ -446,6 +538,7 @@ button  {
     text-transform: lowercase;
     color: #2F2F2F;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .mainProduct .product2 .border a {
@@ -458,6 +551,7 @@ button  {
     text-transform: lowercase;
     color: #2F2F2F;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .mainSing {
@@ -622,6 +716,15 @@ button  {
     border: none;
 }
 
+.mainProduct .product3 button:hover {
+    background: #FFFFFF;
+    border: 2px solid #000;
+}
+
+.mainProduct .product3 button a:hover {
+    color: #3F3F3F;
+}
+
 .mainProduct .product3 button a {
     font-family: 'Manrope';
     font-style: normal;
@@ -651,13 +754,35 @@ button  {
 
 .mainGraphic .secondGraphic .graphic {
     position: relative;
+    overflow: hidden;
+}
+
+.mainGraphic .secondGraphic .graphic::after {
+    content: '';
+    width: 400px;
+    height: 600px;
+    position: absolute;
     background: #000000;
-    opacity: 0.9;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    overflow: hidden;
+    transform: scale(0);
+    opacity: 0.3;
+    transition: all 0.3s ease-in-out;
+}
+
+.mainGraphic .secondGraphic .graphic:hover::after {
+    transform: scale(1);
 }
 
 .mainGraphic .secondGraphic .graphic img {
     width: 100%;
-    height: 100%;
+    z-index: 5;
+}
+
+.mainGraphic .secondGraphic .graphic img:hover {
+    transform: scale(1.2);
 }
 
 .mainGraphic .secondGraphic .graphic .inner {
@@ -723,18 +848,6 @@ button  {
     padding: 3px 5px;
     background: #FFFFFF;
     border: 2px solid #F8F8F8;
-}
-
-.mainGraphic .secondGraphic .img {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.mainGraphic .secondGraphic .img img {
-    width: 100%;
-    height: 100%;
 }
 
 .mainGraphic .footer {
@@ -807,9 +920,27 @@ button  {
     color: #FFFFFF;
     position: absolute;
     top: 80px;
-    left: 620px;
+    left: 310px;
     background: #000000;
     border: 2px solid #333333;
+}
+
+.wrapper .innerWrapper .arrow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .innerWrapper .arrow .leftArrow {
+    position: absolute;
+    left: 150px;
+    top: 320px;
+}
+
+.wrapper .innerWrapper .arrow .rightArrow {
+    position: absolute;
+    right: 150px;
+    top: 320px;
 }
 
 .wrapper .innerWrapper p {
@@ -935,6 +1066,12 @@ button  {
     text-align: center;
 }
 
+.navLink .innerLink .link1 a:hover {
+    background: #FFFFFF;
+    border: 2px solid #000;
+    color: #3F3F3F;
+}
+
 .navLink .innerLink .link2 {
     width: 30%;
     display: flex;
@@ -962,6 +1099,27 @@ button  {
     letter-spacing: 0.085em;
     text-transform: uppercase;
     color: #8F8F8F;
+    position: relative;
+    text-align: center;
+}
+
+.navLink .innerLink .link2 .innerLink2 p:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.navLink .innerLink .link2 .innerLink2 p::before{
+    content: '';
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: width 0.5s ease;
+    background: #000;
+}
+
+.navLink .innerLink .link2 .innerLink2 p:hover:before {
+    width: 100%;
 }
 
 .navLink .innerLink .link3 p {
@@ -1019,6 +1177,9 @@ button  {
 @media(max-width:780px) {
     .menu {
         width: 100%;
+    }
+
+    .menu-btn {
         right: 0;
     }
 
@@ -1091,7 +1252,7 @@ button  {
     .mainCity .city2 {
         width: 50%;
         margin: 0 auto;
-        text-align: ;
+        
         
     }
 
@@ -1118,12 +1279,21 @@ button  {
         width: 100%;
     }
 
-
-    .mainProduct .product2 .innerProduct1 {
+    .mainProduct .product1 {
         width: 100%;
     }
 
-    .mainProduct .product2 .innerProduct1 img {
+    .mainProduct .product2 {
+        width: 100%;
+    }
+
+
+    .mainProduct .product2 .innerProduct1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mainProduct .product2 .innerProduct1 a img {
         width: 100%;
     }
 
@@ -1226,6 +1396,7 @@ button  {
     .mainGraphic .secondGraphic .graphic {
         width: 100%;
         margin-bottom: 40px;
+        position: relative;
     }
 
     .mainGraphic .secondGraphic .graphic .inner {
@@ -1237,9 +1408,8 @@ button  {
         left: 0px;
     }
 
-    .mainGraphic .secondGraphic .img {
-        width: 100%;
-        height: 100%;
+    .wrapper .innerWrapper .arrow p {
+        font-size: 12px;
     }
 
     .wrapper .innerWrapper .wrapperHeader {
@@ -1291,6 +1461,10 @@ button  {
         text-align: center;
     }
 
+    .navLink .innerLink .link1 input {
+        width: 60%;
+    }
+
     .navLink .innerLink .link2 {
         width: 80%;
         margin: 0 auto;
@@ -1313,7 +1487,9 @@ button  {
         text-align: center;
     }
 
-
+    .mainGraphic .secondGraphic .graphic::after {
+        width: 500px;
+    }
 
 
 }
